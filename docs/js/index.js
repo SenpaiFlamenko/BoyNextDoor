@@ -19,3 +19,9 @@ $.each($('.guide-title-info a'), function(){
         })
     })
 })
+
+///////////////////////////////////////////////////////////////////////////////////////////////////Mobile Menu
+$('.burger-btn').click(()=>{
+    $('.burger-btn').toggleClass('mobile-toggle');
+    $('nav').toggleClass('mobile-height');
+})
