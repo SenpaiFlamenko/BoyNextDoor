@@ -80,13 +80,13 @@ context = canvas.getContext("2d");
 $('#canvas').mousedown(function(e){
           
     paint = true;
-    addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop - 100);
+    addClick(e.pageX - this.offsetLeft - 56, e.pageY - this.offsetTop - 240);
     redraw();
   });
 
   $('#canvas').mousemove(function(e){
     if(paint){
-      addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop - 100, true);
+      addClick(e.pageX - this.offsetLeft - 56, e.pageY - this.offsetTop - 240, true);
       redraw();
     }
   });
