@@ -885,6 +885,11 @@ nav img {
 }
 
 @media screen and (max-width: 1200px) {
+  .images-grid {
+    -webkit-column-count: 2;
+            column-count: 2;
+    margin: 0 10vmin;
+  }
   nav {
     height: 270px;
     -webkit-box-align: start;
@@ -939,6 +944,10 @@ nav img {
 }
 
 @media screen and (max-width: 800px) {
+  .images-grid {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
   nav {
     height: 360px;
     -webkit-box-align: start;

@@ -571,6 +571,10 @@ nav{
 
 
 @media screen and (max-width: 1200px){
+    .images-grid{ 
+        column-count: 2;
+        margin: 0 10vmin;
+    }
     /////////////////////////////////////////////////////////////Header
 nav{
     height: 270px; //
@@ -621,6 +625,9 @@ nav{
 }
 
 @media screen and (max-width: 800px){
+    .images-grid{ 
+        column-count: 1;
+    }
     /////////////////////////////////////////////////////////////Header
 nav{
     height: 360px; //
