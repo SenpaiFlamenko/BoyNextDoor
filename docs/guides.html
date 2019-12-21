@@ -10,8 +10,7 @@
     <title>Guides</title>
 </head>
 <body>
-    <nav>
-        <div class="logo-menu">
+    <nav class="nav-not-fixed mobile-height">
             <div class="logo"><a href="index.html"><img src="./images/icons/logo.png"></a></div>
             <div class="menu">
                 <ul>
@@ -20,40 +19,42 @@
                     <li><a href="leaderboard.html">LEADERBOARD</a></li>
                 </ul>
             </div>
-        </div>
             <div class="search-login">
                 <div class="search">
                     <div class="search-bar"><input placeholder="search..." class="search-input"></div>
                     <div>
-                        <ul>
-                            <li>Popular tags:</li>
-                            <li><a href="#">anime</a href="#"></li>
-                            <li><a href="#">fortnite</a></li>
-                            <li><a href="#">star_wars</a></li>
-                            <li><a href="#">bepis</a></li>
-                            <li><a href="#">sans</a></li>
-                            <li><a href="#">undertale</a></li>
-                            <li><a href="#">memes</a></li>
-                            <li><a href="#">fedorcomix</a></li>
-                            <li><a href="#">pufferfish</a></li>
-                        </ul>
+                        <p class="tags">
+                            <span>Popular tags:</span>
+                            <span><a href="#">anime</a href="#"></span>
+                            <span><a href="#">fortnite</a></span>
+                            <span><a href="#">star_wars</a></span>
+                            <span><a href="#">bepis</a></span>
+                            <span><a href="#">sans</a></span>
+                            <span><a href="#">undertale</a></span>
+                            <span><a href="#">memes</a></span>
+                            <span><a href="#">fedorcomix</a></span>
+                            <span><a href="#">pufferfish</a></span>
+                        </p>
                     </div>
                 </div>
                 <div class="line"></div>
-                <div class="login">
-                    <a href="#popup2">Sign in</a>
-                    <a href="#popup1">Sign up</a>
-                </div>
+            </div>
+            <div class="login">
+                <a href="#popup2">Sign in</a>
+                <a href="#popup1">Sign up</a>
+            </div>
+            <div class="burger-btn">
+                <span></span>
             </div>
             <div id="popup1" class="overlay">
                 <a class="close" href="#">&times;</a>
                     <div class="popup">
                         <p>Register with</p>
                         <div class="integration">
-                            <a href="#"><img src="/images/icons/icons8-facebook-f-60.png"></a>
-                            <a href="#"><img src="/images/icons/icons8-google-60.png"></a href="#">
-                            <a href="#"><img src="/images/icons/icons8-twitter-60.png"></a href="#">
-                            <a href="#"><img src="/images/icons/icons8-odnoklassniki-60.png"></a href="#">
+                            <a href="#"><img src="./images/icons/icons8-facebook-f-60.png"></a>
+                            <a href="#"><img src="./images/icons/icons8-google-60.png"></a href="#">
+                            <a href="#"><img src="./images/icons/icons8-twitter-60.png"></a href="#">
+                            <a href="#"><img src="./images/icons/icons8-odnoklassniki-60.png"></a href="#">
                         </div>
                         <div class="or-block">                                
                             <p>or</p>
@@ -98,38 +99,40 @@
         </nav>
 
         <div class="guides-section">
-            <div class="guide">
+            <a href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a  href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a  href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a  href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a  href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
-            <div class="guide">
+            </a>
+            <a  href="#" class="guide">
                 <img src="./images/11.jpg" alt="">
                 <h1>Body</h1>
-            </div>
+            </a>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
 </body>
 </html>
