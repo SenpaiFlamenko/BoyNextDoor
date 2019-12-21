@@ -25,3 +25,15 @@ $('.burger-btn').click(()=>{
     $('.burger-btn').toggleClass('mobile-toggle');
     $('nav').toggleClass('mobile-height');
 })
+
+///////////////////////////////////////////////////////////////////////////////////////////////////Scrolling
+lastScroll = 0;
+$(window).on('scroll',function() {    
+    var scroll = $(window).scrollTop();
+    if(lastScroll - scroll > 0) {
+        $(".footer-block").addClass("scrollbottom");
+    } else {
+        $(".footer-block").removeClass("scrollbottom");
+    }
+    lastScroll = scroll;
+});

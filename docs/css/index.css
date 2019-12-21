@@ -733,6 +733,52 @@ nav img {
           filter: grayscale(50%) blur(2px);
 }
 
+.scroll {
+  bottom: -60px;
+}
+
+.scrollbottom {
+  bottom: 0;
+}
+
+.footer-block {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  white-space: nowrap;
+  background-color: #2e3035;
+  height: 50px;
+  line-height: 50px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition-property: bottom;
+  transition-property: bottom;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 24px;
+  font-size: 13px;
+  letter-spacing: .5px;
+  text-align: left;
+  width: 100%;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin: auto 20px;
+  vertical-align: center;
+}
+
 #themedisplay {
   font-size: 2rem;
   font-weight: 1000;
