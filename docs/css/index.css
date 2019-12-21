@@ -357,6 +357,30 @@ nav img {
   margin-left: 15px;
 }
 
+.logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 40px 0 10px;
+}
+
+.logged img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0px !important;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #5e5e5e;
+}
+
+.logged .login-info {
+  padding-left: 8px;
+}
+
+.logged .login-info a p {
+  font-weight: 1000;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -669,6 +693,7 @@ nav img {
 }
 
 .images-grid {
+  overflow: hidden;
   -webkit-column-count: 4;
           column-count: 4;
   -webkit-column-gap: 1em;
@@ -678,13 +703,14 @@ nav img {
 }
 
 .images-grid figure {
+  position: relative;
   display: inline-block;
   overflow: hidden;
   width: 100%;
   margin-top: 20px;
 }
 
-.images-grid figure img {
+.images-grid img {
   border: 1px solid #000;
   width: 100%;
   height: 100%;
@@ -698,13 +724,43 @@ nav img {
           filter: grayscale(0) blur(0);
 }
 
-figure:hover img {
+.images-grid img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   -webkit-filter: grayscale(50%) blur(2px);
           filter: grayscale(50%) blur(2px);
+}
+
+#themedisplay {
+  font-size: 2rem;
+  font-weight: 1000;
+}
+
+#timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 24px;
+  margin-right: 5px;
+}
+
+#time {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#addblock {
+  margin: 30px 0 0 30px;
 }
 
 .drawnav {
@@ -731,13 +787,14 @@ figure:hover img {
 
 #drawbox {
   background-color: #18191c;
-  padding: 100px 30px 30px 30px;
+  width: 100%;
   margin: 25px;
 }
 
 #drawing-Upper {
-  width: 1353px;
-  height: 803px;
+  margin: 0 30px 30px 30px;
+  width: 1350px;
+  height: 800px;
 }
 
 #drawing {

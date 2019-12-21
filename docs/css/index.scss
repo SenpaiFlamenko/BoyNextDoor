@@ -166,6 +166,23 @@ nav{
         }
     } 
 }
+.logged{
+    display: flex;
+    padding: 0px 40px 0 10px;
+    img{
+        object-fit: cover;
+        padding: 0px !important;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #5e5e5e;
+    }
+    .login-info{
+        padding-left: 8px;
+        a p{
+            font-weight: 1000;
+        }
+    }
+}
 /////////////////////////////////////////////////////////////popup
 .overlay {
     position: fixed;
@@ -406,35 +423,57 @@ nav{
 
 
 /////////////////////////////////////////////////////////////Grid-block
-.images-grid{
+.images-grid{ 
+    overflow: hidden;
     column-count: 4;
     column-gap: 1em;
     margin: 0 15vmin;
     padding: 50px 0;
     figure{
+        position: relative;
         display: inline-block;
         overflow: hidden;
         width: 100%;
         margin-top: 20px;
-            img{
-                border: 1px solid #000;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transform: scale(1);
-                transition: .3s ease-in-out;
-                filter: grayscale(0) blur(0);
-            }
+    }
+    img{
+        border: 1px solid #000;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: .3s ease-in-out;
+        filter: grayscale(0) blur(0);
+        &:hover{
+            transform: scale(1.2);
+            transition: .3s ease-in-out;
+            filter: grayscale(50%) blur(2px);
         }
     }
-    figure:hover img{ 
-        transform: scale(1.2);
-        transition: .3s ease-in-out;
-        filter: grayscale(50%) blur(2px);
-    }
+}
 
 
 /////////////////////////////////////////////////////////////drawing
+#themedisplay{
+    font-size: 2rem;
+    font-weight: 1000;
+}
+#timer{
+    display: flex;
+    align-items: center;
+    img{
+        filter: invert(1);
+        width: 24px;
+        margin-right: 5px;
+    }
+}
+#time{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+#addblock{
+    margin: 30px 0 0 30px;
+}
 .drawnav{
     position: unset;
     width: 100%;
@@ -451,12 +490,13 @@ nav{
 }
 #drawbox{
     background-color: #18191c;
-    padding: 100px 30px 30px 30px;
+    width: 100%;
     margin: 25px;
 }
 #drawing-Upper{
-    width: 1353px;
-    height: 803px;
+    margin: 0 30px 30px 30px;
+    width: 1350px;
+    height: 800px;
 }
 #drawing{
     position: relative;
