@@ -491,6 +491,7 @@ nav{
 #themedisplay{
     font-size: 2rem;
     font-weight: 1000;
+    padding: 20px 0;
 }
 #timer{
     display: flex;
@@ -506,37 +507,79 @@ nav{
     font-weight: 700;
 }
 #addblock{
-    margin: 30px 0 0 30px;
+    margin-left: 30px;
 }
-.drawnav{
-    position: unset;
+////////////////////////////////////////////////////////Message
+#canvas{
     width: 100%;
-    z-index: 1;
-    background: #18191c;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #5e5e5e;
-    img{
-        width: 200px;
-        padding: 15px 20px;
-    }
+    height: 600px;
+}
+#drawing{
+    position: relative;
+    margin-left: 25px;
+    flex: 2;
+    display: block;
+    border: 2px solid #000;
 }
 #drawbox{
     background-color: #18191c;
     width: 100%;
-    margin: 25px;
 }
 #drawing-Upper{
-    margin: 0 30px 30px 30px;
-    width: 1350px;
-    height: 800px;
+    display: flex;
 }
-#drawing{
-    position: relative;
-    display: block;
-    background-color: #fff;
-    border: 2px solid #000;
+.speaking{
+    margin: 0 25px;
+    flex:1;
+}
+.messages{
+    height: 530px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.drawing-avatar{
+    width: 30px !important;
+    height: 30px !important;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.drawing-chat{
+    background-color: rgb(53, 53, 53);
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.draw-input{
+    align-self: flex-end;
+}
+.draw-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        outline: none;
+        border-radius: 7px;
+        width: 100%;
+        padding: 10px;
+    }
+    img{
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
 }
 #Clear{
     margin: 0 5px 5px 0;
@@ -688,5 +731,53 @@ nav{
 
 .guides-section{
     column-count: 1;
+}
+
+///////////////////////////////////////////////////////Drawing
+////////////////////////////////////////////////////////Message
+.sizes-block{
+    left: 2px;//
+    bottom: 50px;//
+}
+#drawing{
+    margin: 0 25px;//
+}
+#drawing-Upper{
+    flex-direction: column;//
+}
+
+//Text
+.messages{
+    height: 330px;//
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.drawing-avatar{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.drawing-chat{
+    background-color: rgb(53, 53, 53);
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Clear{
+    top: 5px;//
+    bottom: unset;//
+    right: 0;//
 }
 }
