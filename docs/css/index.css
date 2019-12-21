@@ -171,7 +171,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #5e5e5e;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 nav img {
@@ -607,7 +607,7 @@ nav img {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0 10px 20px;
-  padding-top: 104.31px;
+  padding-top: 94.31px;
   width: 100%;
 }
 
@@ -616,7 +616,7 @@ nav img {
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -624,9 +624,9 @@ nav img {
 }
 
 .sort-block img {
-  margin-left: 10px;
-  width: 16px;
-  height: 16px;
+  margin-left: 8px;
+  width: 12px;
+  height: 12px;
 }
 
 .sort-block .dropdown {
@@ -659,8 +659,8 @@ nav img {
 }
 
 .sort-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
 }
 
@@ -677,7 +677,7 @@ nav img {
 .sort-icon span::before {
   content: '';
   position: absolute;
-  top: -8px;
+  top: -6px;
   width: 150%;
   height: 3px;
   background-color: #fff;
@@ -686,7 +686,7 @@ nav img {
 .sort-icon span::after {
   content: '';
   position: absolute;
-  top: 8px;
+  top: 6px;
   width: 60%;
   height: 3px;
   background-color: #fff;
@@ -886,7 +886,7 @@ nav img {
 
 @media screen and (max-width: 1200px) {
   nav {
-    height: 250px;
+    height: 270px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -925,6 +925,12 @@ nav img {
     left: 20px;
     position: absolute;
   }
+  .logged {
+    top: 190px;
+    left: 20px;
+    position: absolute;
+    padding: 0;
+  }
   .guides-section {
     -webkit-column-count: 2;
             column-count: 2;
@@ -934,7 +940,7 @@ nav img {
 
 @media screen and (max-width: 800px) {
   nav {
-    height: 350px;
+    height: 360px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -942,7 +948,7 @@ nav img {
   .search-login {
     position: absolute;
     left: 20px;
-    top: 230px;
+    top: 260px;
   }
   .login {
     top: 200px;
