@@ -38,7 +38,7 @@ nav{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #5e5e5e;
-    padding: 5px 0;
+    padding: 10px 0;
     img{
         width: 150px;
         padding: 15px 20px;
@@ -353,19 +353,19 @@ nav{
     display: flex;
     align-items: center;
     padding: 10px 0 10px 20px;
-    padding-top: 104.31px;
+    padding-top: 94.31px;
     width: 100%;
     p{
         display: flex;
         margin-right: 20px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 700;
         align-items: center;
     }
     img{
-        margin-left: 10px;
-        width: 16px;
-        height: 16px;
+        margin-left: 8px;
+        width: 12px;
+        height: 12px;
     }
     .dropdown{
         padding: 12px 0px;
@@ -392,8 +392,8 @@ nav{
       }
 }
 .sort-icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: relative;
     span{
         position: absolute;
@@ -405,7 +405,7 @@ nav{
         &::before{
             content: '';
             position: absolute;
-            top: -8px;
+            top: -6px;
             width: 150%;
             height: 3px;
             background-color: #fff;
@@ -413,7 +413,7 @@ nav{
         &::after{
             content: '';
             position: absolute;
-            top: 8px;
+            top: 6px;
             width: 60%;
             height: 3px;
             background-color: #fff;
@@ -573,7 +573,7 @@ nav{
 @media screen and (max-width: 1200px){
     /////////////////////////////////////////////////////////////Header
 nav{
-    height: 250px; //
+    height: 270px; //
     align-items: flex-start; //
 }
 .burger-btn{
@@ -606,6 +606,13 @@ nav{
     position: absolute;//
 }
 
+.logged{
+    top: 190px;
+    left: 20px;
+    position: absolute;//
+    padding: 0;
+}
+
 
 .guides-section{
     column-count: 2;
@@ -616,13 +623,13 @@ nav{
 @media screen and (max-width: 800px){
     /////////////////////////////////////////////////////////////Header
 nav{
-    height: 350px; //
+    height: 360px; //
     align-items: flex-start; //
 }
 .search-login{
     position: absolute;///
     left: 20px;
-    top: 230px;
+    top: 260px;
 }
 .login{
     top: 200px;
