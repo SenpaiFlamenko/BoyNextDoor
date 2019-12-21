@@ -179,6 +179,30 @@ nav img {
   padding: 15px 20px;
 }
 
+.logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 40px 0 10px;
+}
+
+.logged img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0px !important;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #5e5e5e;
+}
+
+.logged .login-info {
+  padding-left: 8px;
+}
+
+.logged .login-info a p {
+  font-weight: 1000;
+}
+
 .burger-btn {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -829,7 +853,7 @@ figure:hover img {
 
 @media screen and (max-width: 1200px) {
   nav {
-    height: 250px;
+    height: 270px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -868,6 +892,12 @@ figure:hover img {
     left: 20px;
     position: absolute;
   }
+  .logged {
+    top: 190px;
+    left: 20px;
+    position: absolute;
+    padding: 0;
+  }
   .guides-section {
     -webkit-column-count: 2;
             column-count: 2;
@@ -877,7 +907,7 @@ figure:hover img {
 
 @media screen and (max-width: 800px) {
   nav {
-    height: 350px;
+    height: 370px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -885,7 +915,7 @@ figure:hover img {
   .search-login {
     position: absolute;
     left: 20px;
-    top: 230px;
+    top: 260px;
   }
   .login {
     top: 200px;

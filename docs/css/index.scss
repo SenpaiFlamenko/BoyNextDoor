@@ -44,6 +44,23 @@ nav{
         padding: 15px 20px;
     }
 }
+.logged{
+    display: flex;
+    padding: 0px 40px 0 10px;
+    img{
+        object-fit: cover;
+        padding: 0px !important;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #5e5e5e;
+    }
+    .login-info{
+        padding-left: 8px;
+        a p{
+            font-weight: 1000;
+        }
+    }
+}
 .burger-btn{
     transition: all 0.3s ease-in-out;
     display: none;
@@ -533,7 +550,7 @@ nav{
 @media screen and (max-width: 1200px){
     /////////////////////////////////////////////////////////////Header
 nav{
-    height: 250px; //
+    height: 270px; //
     align-items: flex-start; //
 }
 .burger-btn{
@@ -567,6 +584,13 @@ nav{
 }
 
 
+.logged{
+    top: 190px;
+    left: 20px;
+    position: absolute;//
+    padding: 0;
+}
+
 .guides-section{
     column-count: 2;
     margin: 0 20px;
@@ -576,13 +600,13 @@ nav{
 @media screen and (max-width: 800px){
     /////////////////////////////////////////////////////////////Header
 nav{
-    height: 350px; //
+    height: 370px; //
     align-items: flex-start; //
 }
 .search-login{
     position: absolute;///
     left: 20px;
-    top: 230px;
+    top: 260px;
 }
 .login{
     top: 200px;
