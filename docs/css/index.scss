@@ -24,29 +24,85 @@ a{
 }
 /*Other Classes*/
 /////////////////////////////////////////////////////////////Header
+.mobile-height{
+    height: 86px;
+}
 nav{
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    height: 76px;
     position: fixed;
     width: 100%;
     z-index: 1;
     background: #18191c;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #5e5e5e;
+    padding: 5px 0;
     img{
-        width: 200px;
+        width: 150px;
         padding: 15px 20px;
     }
+}
+.burger-btn{
+    transition: all 0.3s ease-in-out;
+    display: none;
+    margin-top: 13px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    span{
+        position: relative;
+        width: 80%;
+        height: 3px;
+        background-color: #fff;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -10px;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+        }
+    }
+}
+.mobile-toggle{
+    transition: all 0.3s ease-in-out;
+}
+.mobile-toggle span{
+    visibility: hidden;
+}
+.mobile-toggle span::before{
+    visibility: visible;
+    top: 0;
+    transform: rotate(45deg);
+}
+.mobile-toggle span::after{
+    visibility: visible;
+    top: 0;
+    transform: rotate(-45deg);
 }
 .logo-menu{
     display: flex;
     align-items: center;
 }
 .menu{
+    margin-right: auto;
     ul{
-        font-size: 1.5rem;
+        font-size: 0.7rem;
         font-weight: 1000;
-        margin-left: 35px;
+        margin: 0 10px;
         display: flex;
         li{
             margin-right: 17px;
@@ -57,12 +113,10 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    ul{
-        display: flex;
-        flex-direction: row;
-        li{
-            margin-right: 7px;
-            font-size: 0.8rem;
+    p{
+        span{
+            margin-right: 3px;
+            font-size: 0.7rem;
             a{
                 color: #737f8a;
             }
@@ -73,8 +127,7 @@ nav{
     }
 }
 .search-bar{
-    width: 560px;
-    margin: 0 auto;
+    width: 100%;
 }
 .search-input{
     outline: none;
@@ -98,6 +151,7 @@ nav{
     display: flex;
 }
 .login{
+    margin-top: -15px;
     display: block;
     white-space: nowrap;
     a{
@@ -471,4 +525,80 @@ nav{
             background-color: rgb(59, 59, 59);
         }
     }
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    /////////////////////////////////////////////////////////////Header
+nav{
+    height: 250px; //
+    align-items: flex-start; //
+}
+.burger-btn{
+    display: flex;
+    margin-left: auto;
+}
+.menu{
+    position: absolute;//
+    top: 76px;//
+    ul{
+        flex-direction: column;//
+        li{
+            margin: 10px 0 10px 10px;//
+        }
+    }
+}
+.line{
+    display: none;//
+}
+.search-login{
+    margin-left: auto;//
+    margin-right: 20px;
+}
+.search{
+    margin-top: 15px;
+}
+.login{
+    top: 200px;
+    left: 20px;
+    position: absolute;//
+}
+
+
+.guides-section{
+    column-count: 2;
+    margin: 0 20px;
+}
+}
+
+@media screen and (max-width: 800px){
+    /////////////////////////////////////////////////////////////Header
+nav{
+    height: 350px; //
+    align-items: flex-start; //
+}
+.search-login{
+    position: absolute;///
+    left: 20px;
+    top: 230px;
+}
+.login{
+    top: 200px;
+    left: 20px;
+    position: absolute;//
+}
+.tags{
+    li{
+        display: inline-block;
+        a{
+            display: inline-block;
+        }
+    }
+}
+
+.guides-section{
+    column-count: 1;
+}
 }
