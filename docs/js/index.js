@@ -25,3 +25,16 @@ $('.burger-btn').click(()=>{
     $('.burger-btn').toggleClass('mobile-toggle');
     $('nav').toggleClass('mobile-height');
 })
+
+/////////////////////////////////////////////////////////////////////////Rendering
+function RenderMessage(relative, message){
+    let renderSkeleton = `
+    <div class="message">
+        <div class="drawing-avatar"></div>
+        <p>FlameKnight: ${message}</p>
+    </div>`
+    relative.append(renderSkeleton);
+}
+$('.draw-input img').click(()=>{
+    RenderMessage($('.messages'), $('.draw-input input').val());
+})
