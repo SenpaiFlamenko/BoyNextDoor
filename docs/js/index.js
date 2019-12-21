@@ -26,6 +26,19 @@ $('.burger-btn').click(()=>{
     $('nav').toggleClass('mobile-height');
 })
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////Scrolling
+lastScroll = 0;
+$(window).on('scroll',function() {    
+    var scroll = $(window).scrollTop();
+    if(lastScroll - scroll > 0) {
+        $(".footer-block").addClass("scrollbottom");
+    } else {
+        $(".footer-block").removeClass("scrollbottom");
+    }
+    lastScroll = scroll;
+});
+
 /////////////////////////////////////////////////////////////////////////Rendering
 function RenderMessage(relative, message){
     let renderSkeleton = `
@@ -38,3 +51,4 @@ function RenderMessage(relative, message){
 $('.draw-input img').click(()=>{
     RenderMessage($('.messages'), $('.draw-input input').val());
 })
+

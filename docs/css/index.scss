@@ -452,7 +452,41 @@ nav{
     }
 }
 
-
+/////////////////////////////////////////////////////////////Footer
+.scroll{
+    bottom: -60px;
+}
+.scrollbottom{
+    bottom: 0;
+}
+.footer-block{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    white-space: nowrap;
+    background-color: #2e3035;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    transition-property: bottom;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    animation-delay: 2s;
+}
+.footer-menu{
+    display: flex;
+    margin: 0 24px;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-align: left;
+    width: 100%;
+    li{
+        display: inline-block;
+        margin: auto 20px;
+        vertical-align: center;
+    }
+}
 /////////////////////////////////////////////////////////////drawing
 #themedisplay{
     font-size: 2rem;
