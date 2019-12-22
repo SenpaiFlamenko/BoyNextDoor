@@ -1167,8 +1167,22 @@ nav img {
 }
 
 @media screen and (max-width: 1024px) {
-  .guide-title-info-wrapper::before {
-    width: 130px !important;
+  .guide-title-wrapper {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .guide-title-wrapper .guide-image {
+    width: 100%;
+    height: 400px;
+  }
+  .guide-title-wrapper .guide-title-info-wrapper {
+    height: 500px;
+    padding-top: 50px;
+  }
+  .guide-title-wrapper .guide-title-info-wrapper::before {
+    display: none;
   }
   .scroll {
     bottom: -220px;
@@ -1273,6 +1287,30 @@ nav img {
     top: 5px;
     bottom: unset;
     right: 0;
+  }
+  .guide-title-wrapper {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .guide-title-wrapper .guide-image {
+    width: 100%;
+    height: 400px;
+  }
+  .guide-title-wrapper .guide-title-info-wrapper {
+    height: 500px;
+    padding-top: 50px;
+  }
+  .guide-title-wrapper .guide-title-info-wrapper::before {
+    display: none;
+  }
+  .guide-title-wrapper .guide-title-info {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .guide-title-wrapper .guide-title-info h1 {
+    font-size: 30px;
   }
 }
 

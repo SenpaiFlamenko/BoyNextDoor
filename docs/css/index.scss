@@ -787,8 +787,20 @@ nav{
 }
 
 @media screen and (max-width: 1024px){
-    .guide-title-info-wrapper::before{
-        width: 130px !important; 
+    .guide-title-wrapper{
+        display: block;
+        height: fit-content;
+        .guide-image{
+            width: 100%;
+            height: 400px;
+        }
+        .guide-title-info-wrapper{
+            height: 500px;
+            padding-top: 50px;
+            &::before{
+                display: none;
+            }
+        }
     }
     /////////////////////////////////////////////////////////////Footer
 .scroll{
@@ -802,7 +814,7 @@ nav{
     display: block;
 }
 .footer-menu{
-    column-count: 3;//
+    column-count: 3;
     display: block;
 }
 }
@@ -813,18 +825,18 @@ nav{
     }
     /////////////////////////////////////////////////////////////Header
 nav{
-    height: 360px; //
-    align-items: flex-start; //
+    height: 360px; 
+    align-items: flex-start; 
 }
 .search-login{
-    position: absolute;///
+    position: absolute;
     left: 20px;
     top: 260px;
 }
 .login{
     top: 200px;
     left: 20px;
-    position: absolute;//
+    position: absolute;
 }
 .tags{
     li{
@@ -885,6 +897,28 @@ nav{
     top: 5px;//
     bottom: unset;//
     right: 0;//
+}
+.guide-title-wrapper{
+    display: block;
+    height: fit-content;
+    .guide-image{
+        width: 100%;
+        height: 400px;
+    }
+    .guide-title-info-wrapper{
+        height: 500px;
+        padding-top: 50px;
+        &::before{
+            display: none;
+        }
+    }
+    .guide-title-info{
+        padding: 0 20px;
+        text-align: center;
+        h1{
+            font-size: 30px;
+        }
+    }
 }
 }
 @media screen and (max-width: 375px){
