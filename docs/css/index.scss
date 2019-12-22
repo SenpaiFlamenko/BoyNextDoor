@@ -470,41 +470,7 @@ nav{
     }
 }
 
-/////////////////////////////////////////////////////////////Footer
-.scroll{
-    bottom: -60px;
-}
-.scrollbottom{
-    bottom: 0;
-}
-.footer-block{
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    white-space: nowrap;
-    background-color: #2e3035;
-    height: 50px;
-    line-height: 50px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
-    transition-property: bottom;
-    transition-duration: .3s;
-    transition-timing-function: linear;
-    animation-delay: 2s;
-}
-.footer-menu{
-    display: flex;
-    margin: 0 24px;
-    font-size: 13px;
-    letter-spacing: .5px;
-    text-align: left;
-    width: 100%;
-    li{
-        display: inline-block;
-        margin: auto 20px;
-        vertical-align: center;
-    }
-}
+
 /////////////////////////////////////////////////////////////drawing
 #themedisplay{
     font-size: 2rem;
@@ -717,7 +683,42 @@ nav{
   .row:nth-child(4) {
     background: #cd7f32;
   }
-
+/////////////////////////////////////////////////////////////Footer
+.scroll{
+    bottom: -60px;
+}
+.scrollbottom{
+    bottom: 0;
+}
+.footer-block{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    white-space: nowrap;
+    background-color: #2e3035;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    transition-property: bottom;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    animation-delay: 2s;
+    p{
+        margin-left: 24px;//
+    }
+}
+.footer-menu{
+    display: flex;
+    padding: 0 24px;
+    font-size: 13px;
+    letter-spacing: .5px;
+    li{
+        margin: 0 15px;
+    }
+}
 
 
 @media screen and (max-width: 1200px){
@@ -782,12 +783,28 @@ nav{
 .guide-title-info-wrapper::before{
     width: 150px !important; 
 }
+
 }
 
 @media screen and (max-width: 1024px){
     .guide-title-info-wrapper::before{
         width: 130px !important; 
     }
+    /////////////////////////////////////////////////////////////Footer
+.scroll{
+    bottom: -220px;
+}
+.scrollbottom{
+    bottom: 0;
+}
+.footer-block{
+    height: 200px;
+    display: block;
+}
+.footer-menu{
+    column-count: 3;//
+    display: block;
+}
 }
 
 @media screen and (max-width: 800px){
@@ -796,11 +813,7 @@ nav{
     }
     /////////////////////////////////////////////////////////////Header
 nav{
-<<<<<<< HEAD
-    height: 370px; //
-=======
     height: 360px; //
->>>>>>> 3fdb498b3d13b03c7ed31ace4326fe781a8e5ada
     align-items: flex-start; //
 }
 .search-login{
@@ -881,5 +894,21 @@ nav{
     .popup{
         padding: 18px 2px;
     }
+        /////////////////////////////////////////////////////////////Footer
+.scroll{
+    bottom: -220px;
+}
+.scrollbottom{
+    bottom: 0;
+}
+.footer-block{
+    height: 200px;
+}
+.footer-menu{
+    column-count: 3;//
+    li{
+        margin: 0 30px 0 0;
+    }
+}
 
 }
