@@ -11,53 +11,62 @@
 <body>
     <section>
         <header>
-            <nav class="drawnav">
-            <div class="logo-menu">
+            <nav class="nav-not-fixed mobile-height">
                 <div class="logo"><a href="index.html"><img src="./images/icons/logo.png"></a></div>
                 <div class="menu">
                     <ul>
-                        <li><a href="guides.html">GUIDES</a></li>
-                        <li><a href="#">KATA</a></li>
+                        <li><a href="#">GUIDES</a></li>
+                        <li><a href="drawing.html">KATA</a></li>
                         <li><a href="leaderboard.html">LEADERBOARD</a></li>
                     </ul>
                 </div>
-            </div>
                 <div class="search-login">
                     <div class="search">
                         <div class="search-bar"><input placeholder="search..." class="search-input"></div>
                         <div>
-                            <ul>
-                                <li>Popular tags:</li>
-                                <li><a href="#">anime</a href="#"></li>
-                                <li><a href="#">fortnite</a></li>
-                                <li><a href="#">star_wars</a></li>
-                                <li><a href="#">bepis</a></li>
-                                <li><a href="#">sans</a></li>
-                                <li><a href="#">undertale</a></li>
-                                <li><a href="#">memes</a></li>
-                                <li><a href="#">fedorcomix</a></li>
-                                <li><a href="#">pufferfish</a></li>
-                            </ul>
+                            <p class="tags">
+                                <span>Popular tags:</span>
+                                <span><a href="#">anime</a href="#"></span>
+                                <span><a href="#">fortnite</a></span>
+                                <span><a href="#">star_wars</a></span>
+                                <span><a href="#">bepis</a></span>
+                                <span><a href="#">sans</a></span>
+                                <span><a href="#">undertale</a></span>
+                                <span><a href="#">memes</a></span>
+                                <span><a href="#">fedorcomix</a></span>
+                                <span><a href="#">pufferfish</a></span>
+                            </p>
                         </div>
                     </div>
                     <div class="line"></div>
-                    <div class="login">
-                        <a href="#">Sign in</a>
-                        <a href="#popup1">Sign up</a>
+                </div>
+                <div class="logged">
+                    <img src="/images/profile/img1.jpg">
+                    <div class="login-info">
+                        <a href="#"><p>Sebastian</p></a>
+                        <p>Rank: ט</p>
                     </div>
                 </div>
-                
+                <div class="burger-btn">
+                    <span></span>
+                </div>
             </nav>
         </header>
 
     </section> 
     <div id="drawbox">
+     <div id="addblock">
         <div id="themedisplay">
             <!---Themes-->
         </div>
+        <div id="timer">
+            <img src="./images/icons/clock-circular-outline.png">
+            <span id="time">05:00</span>
+        </div>
+     </div>
         <div id="drawing-Upper">
             <div id="drawing">
-                <div id="Clear" onclick="boynextdoor()">Clear</div>
+                <div id="Clear">Clear</div>
                 <div class="black-color drawing-color"></div>
                 <div class="brown-color drawing-color"></div>
                 <div class="lightblue-color drawing-color"></div>
@@ -70,15 +79,25 @@
                     <span class="size 2x">2x</span>
                 </div>
             </div>
+            <div class="speaking">
+                <div class="drawing-chat">
+                    <div class="messages">
+                        <div class="message">
+                            <div class="drawing-avatar"></div>
+                            <p>Text text</p>
+                        </div>
+                    </div>
+                    <div class="draw-input">
+                        <input type="text" placeholder="type something">
+                        <img src="./images/icons/crab.png" alt="telegram">
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-    <!--NextDoorBoy-->
-    <div class="nextdoorboy">
-        <p>Henlo shiba san</p>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="./js/canvas.js"></script>
+<script src="./js/index.js"></script>
 <script src="./js/drawingadd-ons.js"></script>
 </html>

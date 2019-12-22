@@ -38,7 +38,7 @@ nav{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #5e5e5e;
-    padding: 5px 0;
+    padding: 10px 0;
     img{
         width: 150px;
         padding: 15px 20px;
@@ -182,6 +182,23 @@ nav{
             margin-left: 15px;
         }
     } 
+}
+.logged{
+    display: flex;
+    padding: 0px 40px 0 10px;
+    img{
+        object-fit: cover;
+        padding: 0px !important;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #5e5e5e;
+    }
+    .login-info{
+        padding-left: 8px;
+        a p{
+            font-weight: 1000;
+        }
+    }
 }
 /////////////////////////////////////////////////////////////popup
 .overlay {
@@ -353,19 +370,19 @@ nav{
     display: flex;
     align-items: center;
     padding: 10px 0 10px 20px;
-    padding-top: 104.31px;
+    padding-top: 94.31px;
     width: 100%;
     p{
         display: flex;
         margin-right: 20px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 700;
         align-items: center;
     }
     img{
-        margin-left: 10px;
-        width: 16px;
-        height: 16px;
+        margin-left: 8px;
+        width: 12px;
+        height: 12px;
     }
     .dropdown{
         padding: 12px 0px;
@@ -392,8 +409,8 @@ nav{
       }
 }
 .sort-icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: relative;
     span{
         position: absolute;
@@ -405,7 +422,7 @@ nav{
         &::before{
             content: '';
             position: absolute;
-            top: -8px;
+            top: -6px;
             width: 150%;
             height: 3px;
             background-color: #fff;
@@ -413,7 +430,7 @@ nav{
         &::after{
             content: '';
             position: absolute;
-            top: 8px;
+            top: 6px;
             width: 60%;
             height: 3px;
             background-color: #fff;
@@ -423,63 +440,163 @@ nav{
 
 
 /////////////////////////////////////////////////////////////Grid-block
-.images-grid{
+.images-grid{ 
+    overflow: hidden;
     column-count: 4;
     column-gap: 1em;
     margin: 0 15vmin;
     padding: 50px 0;
     figure{
+        position: relative;
         display: inline-block;
         overflow: hidden;
         width: 100%;
         margin-top: 20px;
-            img{
-                border: 1px solid #000;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transform: scale(1);
-                transition: .3s ease-in-out;
-                filter: grayscale(0) blur(0);
-            }
+    }
+    img{
+        border: 1px solid #000;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: .3s ease-in-out;
+        filter: grayscale(0) blur(0);
+        &:hover{
+            transform: scale(1.2);
+            transition: .3s ease-in-out;
+            filter: grayscale(50%) blur(2px);
         }
     }
-    figure:hover img{ 
-        transform: scale(1.2);
-        transition: .3s ease-in-out;
-        filter: grayscale(50%) blur(2px);
-    }
+}
 
-
-/////////////////////////////////////////////////////////////drawing
-.drawnav{
-    position: unset;
+/////////////////////////////////////////////////////////////Footer
+.scroll{
+    bottom: -60px;
+}
+.scrollbottom{
+    bottom: 0;
+}
+.footer-block{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    white-space: nowrap;
+    background-color: #2e3035;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    transition-property: bottom;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    animation-delay: 2s;
+}
+.footer-menu{
+    display: flex;
+    margin: 0 24px;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-align: left;
     width: 100%;
-    z-index: 1;
-    background: #18191c;
+    li{
+        display: inline-block;
+        margin: auto 20px;
+        vertical-align: center;
+    }
+}
+/////////////////////////////////////////////////////////////drawing
+#themedisplay{
+    font-size: 2rem;
+    font-weight: 1000;
+    padding: 20px 0;
+}
+#timer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #5e5e5e;
     img{
-        width: 200px;
-        padding: 15px 20px;
+        filter: invert(1);
+        width: 24px;
+        margin-right: 5px;
     }
 }
-#drawbox{
-    background-color: #18191c;
-    padding: 100px 30px 30px 30px;
-    margin: 25px;
+#time{
+    font-size: 1.4rem;
+    font-weight: 700;
 }
-#drawing-Upper{
-    width: 1353px;
-    height: 803px;
+#addblock{
+    margin-left: 30px;
+}
+////////////////////////////////////////////////////////Message
+#canvas{
+    width: 100%;
+    height: 600px;
 }
 #drawing{
     position: relative;
+    margin-left: 25px;
+    flex: 2;
     display: block;
-    background-color: #fff;
     border: 2px solid #000;
+}
+#drawbox{
+    background-color: #18191c;
+    width: 100%;
+}
+#drawing-Upper{
+    display: flex;
+}
+.speaking{
+    margin: 0 25px;
+    flex:1;
+}
+.messages{
+    height: 530px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.drawing-avatar{
+    width: 30px !important;
+    height: 30px !important;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.drawing-chat{
+    background-color: rgb(53, 53, 53);
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.draw-input{
+    align-self: flex-end;
+}
+.draw-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        outline: none;
+        border-radius: 7px;
+        width: 100%;
+        padding: 10px;
+    }
+    img{
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
 }
 #Clear{
     margin: 0 5px 5px 0;
@@ -548,6 +665,10 @@ nav{
 
 
 @media screen and (max-width: 1200px){
+    .images-grid{ 
+        column-count: 2;
+        margin: 0 10vmin;
+    }
     /////////////////////////////////////////////////////////////Header
 nav{
     height: 270px; //
@@ -583,6 +704,13 @@ nav{
     position: absolute;//
 }
 
+.logged{
+    top: 190px;
+    left: 20px;
+    position: absolute;//
+    padding: 0;
+}
+
 
 .logged{
     top: 190px;
@@ -598,9 +726,16 @@ nav{
 }
 
 @media screen and (max-width: 800px){
+    .images-grid{ 
+        column-count: 1;
+    }
     /////////////////////////////////////////////////////////////Header
 nav{
+<<<<<<< HEAD
     height: 370px; //
+=======
+    height: 360px; //
+>>>>>>> 3fdb498b3d13b03c7ed31ace4326fe781a8e5ada
     align-items: flex-start; //
 }
 .search-login{
@@ -624,5 +759,53 @@ nav{
 
 .guides-section{
     column-count: 1;
+}
+
+///////////////////////////////////////////////////////Drawing
+////////////////////////////////////////////////////////Message
+.sizes-block{
+    left: 2px;//
+    bottom: 50px;//
+}
+#drawing{
+    margin: 0 25px;//
+}
+#drawing-Upper{
+    flex-direction: column;//
+}
+
+//Text
+.messages{
+    height: 330px;//
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.drawing-avatar{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.drawing-chat{
+    background-color: rgb(53, 53, 53);
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Clear{
+    top: 5px;//
+    bottom: unset;//
+    right: 0;//
 }
 }

@@ -25,3 +25,30 @@ $('.burger-btn').click(()=>{
     $('.burger-btn').toggleClass('mobile-toggle');
     $('nav').toggleClass('mobile-height');
 })
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////Scrolling
+lastScroll = 0;
+$(window).on('scroll',function() {    
+    var scroll = $(window).scrollTop();
+    if(lastScroll - scroll > 0) {
+        $(".footer-block").addClass("scrollbottom");
+    } else {
+        $(".footer-block").removeClass("scrollbottom");
+    }
+    lastScroll = scroll;
+});
+
+/////////////////////////////////////////////////////////////////////////Rendering
+function RenderMessage(relative, message){
+    let renderSkeleton = `
+    <div class="message">
+        <div class="drawing-avatar"></div>
+        <p>FlameKnight: ${message}</p>
+    </div>`
+    relative.append(renderSkeleton);
+}
+$('.draw-input img').click(()=>{
+    RenderMessage($('.messages'), $('.draw-input input').val());
+})
+
