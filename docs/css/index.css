@@ -1095,7 +1095,6 @@ nav img {
 }
 
 .footer-menu li {
-  height: 25px;
   margin: 0 15px;
 }
 
@@ -1191,6 +1190,9 @@ nav img {
     -webkit-column-count: 3;
             column-count: 3;
     display: block;
+  }
+  .footer-menu li {
+    height: 25px;
   }
 }
 
@@ -1295,9 +1297,6 @@ nav img {
   }
   .scrollbottom {
     bottom: 0;
-  }
-  .footer-block {
-    height: 200px;
   }
   .footer-menu {
     -webkit-column-count: 3;

@@ -44,7 +44,7 @@ function RenderMessage(relative, message){
     let renderSkeleton = `
     <div class="message">
         <div class="drawing-avatar"></div>
-        <p>FlameKnight: ${message}</p>
+        <p>Sebastian: ${message}</p>
     </div>`
     relative.append(renderSkeleton);
 }
