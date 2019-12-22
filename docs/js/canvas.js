@@ -92,13 +92,13 @@ $(document).ready(()=>{
   
   $('#canvas').mousedown(function(e){
       paint = true;
-      addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop - 200);
+      addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop - 100);
       redraw();
     });
   
     $('#canvas').mousemove(function(e){
       if(paint){
-        addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop - 200, true);
+        addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop - 100, true);
         redraw();
       }
     });
