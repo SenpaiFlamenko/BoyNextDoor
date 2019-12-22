@@ -52,3 +52,13 @@ $('.draw-input img').click(()=>{
     RenderMessage($('.messages'), $('.draw-input input').val());
 })
 
+////////////////////////////////////////////////////////////////////////////Sorting
+document.addEventListener('DOMContentLoaded', () => {
+    let elements = []
+    let container = document.querySelector('#leaderboard')
+    container.querySelectorAll('.row').forEach(el => elements.push(el))
+    container.innerHTML = ''
+    elements.sort((a, b) => b.querySelector('.score').textContent - a.querySelector('.score').textContent)
+    elements.forEach(e => container.appendChild(e))
+  })
+
