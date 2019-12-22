@@ -716,7 +716,6 @@ nav{
     font-size: 13px;
     letter-spacing: .5px;
     li{
-        height: 25px;
         margin: 0 15px;
     }
 }
@@ -823,6 +822,9 @@ nav{
 .footer-menu{
     column-count: 3;
     display: block;
+    li{
+        height: 25px;
+    }
 }
 }
 
@@ -941,9 +943,6 @@ nav{
 }
 .scrollbottom{
     bottom: 0;
-}
-.footer-block{
-    height: 200px;
 }
 .footer-menu{
     column-count: 3;//
