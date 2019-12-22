@@ -44,6 +44,23 @@ nav{
         padding: 15px 20px;
     }
 }
+.logged{
+    display: flex;
+    padding: 0px 40px 0 10px;
+    img{
+        object-fit: cover;
+        padding: 0px !important;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #5e5e5e;
+    }
+    .login-info{
+        padding-left: 8px;
+        a p{
+            font-weight: 1000;
+        }
+    }
+}
 .burger-btn{
     transition: all 0.3s ease-in-out;
     display: none;
@@ -751,6 +768,13 @@ nav{
 }
 
 
+.logged{
+    top: 190px;
+    left: 20px;
+    position: absolute;//
+    padding: 0;
+}
+
 .guides-section{
     column-count: 2;
     margin: 0 20px;
@@ -772,7 +796,11 @@ nav{
     }
     /////////////////////////////////////////////////////////////Header
 nav{
+<<<<<<< HEAD
+    height: 370px; //
+=======
     height: 360px; //
+>>>>>>> 3fdb498b3d13b03c7ed31ace4326fe781a8e5ada
     align-items: flex-start; //
 }
 .search-login{
