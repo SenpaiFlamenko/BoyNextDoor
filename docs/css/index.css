@@ -281,7 +281,7 @@ nav img {
 }
 
 .menu ul {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 1000;
   margin: 0 10px;
   display: -webkit-box;
@@ -1095,6 +1095,7 @@ nav img {
 }
 
 .footer-menu li {
+  height: 25px;
   margin: 0 15px;
 }
 
@@ -1128,6 +1129,9 @@ nav img {
   }
   .menu ul li {
     margin: 10px 0 10px 10px;
+  }
+  .menu ul li a {
+    padding: 10px;
   }
   .line {
     display: none;
@@ -1177,8 +1181,11 @@ nav img {
     bottom: 0;
   }
   .footer-block {
-    height: 200px;
+    height: 155px;
     display: block;
+  }
+  .footer-block p {
+    height: 30px;
   }
   .footer-menu {
     -webkit-column-count: 3;

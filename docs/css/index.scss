@@ -117,7 +117,7 @@ nav{
 .menu{
     margin-right: auto;
     ul{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 1000;
         margin: 0 10px;
         display: flex;
@@ -716,6 +716,7 @@ nav{
     font-size: 13px;
     letter-spacing: .5px;
     li{
+        height: 25px;
         margin: 0 15px;
     }
 }
@@ -742,6 +743,9 @@ nav{
         flex-direction: column;//
         li{
             margin: 10px 0 10px 10px;//
+            a{
+                padding: 10px;
+            }
         }
     }
 }
@@ -798,8 +802,11 @@ nav{
     bottom: 0;
 }
 .footer-block{
-    height: 200px;
+    height: 155px;
     display: block;
+    p{
+        height: 30px;
+    }
 }
 .footer-menu{
     column-count: 3;//
