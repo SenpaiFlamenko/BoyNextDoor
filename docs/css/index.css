@@ -428,7 +428,9 @@ nav img {
   padding: 20px;
   background: #36393f;
   border-radius: 5px;
-  width: 25%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
   -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
@@ -486,6 +488,7 @@ nav img {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border-bottom-color: #3b5998;
+  margin: 0 2px 0 2px;
 }
 
 .integration a:nth-of-type(2) {
@@ -1024,6 +1027,71 @@ nav img {
   background-color: #3b3b3b;
 }
 
+#leaderboard {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.row1 .name {
+  margin-left: 55px;
+}
+
+.Rank {
+  position: relative;
+  display: inline-block;
+  width: 5%;
+  padding-left: 5px;
+}
+
+.name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.name img {
+  margin-left: 15px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.score {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+}
+
+.row:nth-child(2) {
+  background: gold;
+}
+
+.row:nth-child(3) {
+  background: #c0c0c0;
+}
+
+.row:nth-child(4) {
+  background: #cd7f32;
+}
+
 @media screen and (max-width: 1200px) {
   .images-grid {
     -webkit-column-count: 2;
@@ -1080,6 +1148,15 @@ nav img {
     -webkit-column-count: 2;
             column-count: 2;
     margin: 0 20px;
+  }
+  .guide-title-info-wrapper::before {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .guide-title-info-wrapper::before {
+    width: 130px !important;
   }
 }
 
@@ -1173,6 +1250,15 @@ nav img {
     top: 5px;
     bottom: unset;
     right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .forms input {
+    width: 280px !important;
+  }
+  .popup {
+    padding: 18px 2px;
   }
 }
 /*# sourceMappingURL=index.css.map */
